@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정혜리 포트폴리오</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .header {
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
+        .download-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .pdf-viewer {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정혜리 포트폴리오</h1>
+            <p>Portfolio</p>
+        </div>
+        <iframe 
+            class="pdf-viewer"
+            src="https://drive.google.com/file/d/1uCtoB_XiRHcHXvhOWwYFPum3aERnk63r/preview"
+            allow="autoplay">
+        </iframe>
+        <div class="download-section">
+            <a href="https://drive.google.com/file/d/1uCtoB_XiRHcHXvhOWwYFPum3aERnk63r/view?usp=drive_link" class="download-btn" target="_blank">
+                📥 PDF 다운로드
+            </a>
+        </div>
+    </div>
+</body>
+</html>
