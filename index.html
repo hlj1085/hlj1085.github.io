@@ -20,7 +20,7 @@
             flex-direction: column;
         }
 
-        /* 💡 상단 공지 바 (개발 중임을 알리는 영역) */
+        /* 상단 공지 바 (개발 중임을 알리는 영역) */
         .status-bar {
             background-color: #1a1a1a; /* 다크 차콜 색상으로 명함과 톤앤매너 맞춤 */
             color: #ffffff;
@@ -50,19 +50,17 @@
             font-size: 12px;
         }
 
-        /* 💡 PDF 뷰어 영역 (남은 화면 100% 채우기) */
+        /* PDF 뷰어 영역 (남은 화면 100% 채우기) */
         .pdf-wrapper {
             flex-grow: 1; /* 상단 바를 제외한 나머지 공간 모두 차지 */
             width: 100%;
             background-color: #e5e5e5;
         }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
+        
+        <iframe 
+            src="./portfolio.pdf#toolbar=0" 
+            allow="autoplay">
+        </iframe>
 
         /* 모바일 화면 대응 */
         @media (max-width: 600px) {
